@@ -1,0 +1,432 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    width: 100%;
+}
+.logo img{
+    margin-left: 35px;
+    width: 150px;
+    
+}
+.link-container{
+
+    display: contents;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-list{
+    list-style: none;
+    color: initial;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.nav-list li{
+    margin-right: 20px;
+    position: relative;
+    display: inline-block;
+
+}
+/*Açılır menü sitilleri başlangıç*/
+.nav-list ul{
+    list-style: none;
+    padding: 0;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 600px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    
+}
+
+.nav-list li:hover .dropdown-content {
+    display: grid;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+.nav-list li a:hover{
+    color:#8316b5;
+    text-decoration: none;
+}
+
+/*açılır menü sitil bitiş*/
+.login-button{
+    background-color: #8316b5;
+    border-color: #8316b5;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: none;
+    border: none;
+    width: 250px;
+    height: 55px;
+    font-size: 17px;
+    font-weight: bold;
+    margin-right: 72px;
+}
+
+.login-button:focus{
+    outline: none;
+}
+.search-container{
+    background-image: url("https://aday-spage.mncdn.com/Knet_img_k-logo-lg.5cda430.webp?v=69448");
+    background-repeat: no-repeat;
+    background-size: 410px;
+    background-position: right;
+    background-color: #f5f5f5;
+    height: 300px;
+    
+   }
+
+   .search-container h2{
+    font-size: 38px;
+    font-weight: bold;
+    margin-left: 52px;
+    padding-top: 40px;
+   }
+
+   .search-container p{
+    font-size: 24px;
+    margin-left: 52px;
+   }
+   .search-button{
+    background-color: #8316b5;
+    border-color: #8316b5;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: none;
+    border: none;
+    width: 150px;
+    height: 60px;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 30px;
+    font-size: 18px;
+    align-items: center;
+    
+   }
+   .search-button:focus{
+    outline: none;
+   }
+   .search-button img {
+    filter: brightness(0) invert(1); /* İkonun rengini beyaz yap */
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+   .form-input {
+    width: 300px;
+    height: 60px;
+    margin-left: 52px;
+    border-radius: 4px;
+    border: 2px solid #c2c2c2; /* Solid border tanımlandı */
+    background-color: #fff;
+    padding: 10px 30px 10px 12px;
+    text-overflow: ellipsis;
+}
+
+.form-input:hover {
+    border-color: #8316b5; /* Hover durumunda border rengi değiştirildi */
+}
+.form-input:focus {
+    border-color: #8316b5; /* Tıkladıktan sonra border rengi değiştirildi */
+    outline: none; /* Varsayılan odak çerçevesini kaldırır */
+}
+.populer-search-container{
+
+background-color:#f5f5f5;
+    
+}
+.populer-search{
+   
+    margin-left: 52px;
+    font-weight: 400;
+    color: #878787;
+    text-transform: uppercase;
+    font-size: 1rem;
+    }
+    .populer-container {
+        display: flex;
+        justify-content:space-between;
+    }
+    
+    .search-list {
+        display: flex;
+        flex-wrap: wrap; /* Bu, içerideki öğelerin sığabileceği kadar geniş bir alana izin verir ve ardından alt satıra geçer */
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-bottom: 30px;
+    }
+    
+    .search-list li {
+        border: 1px #c2c2c2 solid;
+        width: 200px;
+        border-radius: 40px;
+        background-color: white;
+        color: #8316b5;
+        padding: 3px;
+        margin: 5px 3px;
+        text-align: center;
+        margin-left: 52px;
+    }
+    
+    .search-list li a {
+        color: #8316b5;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    .search-list li:hover {
+        border-color: #8316b5; /* Üzerine gelindiğinde border rengini değiştir */
+    }
+
+
+ .image-container {
+    text-align: center;
+   
+    margin-left: auto; /* Sayfa ortalaması için */
+    margin-right: auto; /* Sayfa ortalaması için */
+    margin-top: 40px;
+    
+  
+}
+#image{
+    width: 1000px;
+
+}
+
+ .image-container button {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.image-container button.prev {
+    float: none; /* float'ı kaldır */
+
+}
+
+.image-container button.next {
+    float: none; /* float'ı kaldır */
+}
+.next{
+    background-color:#f5f5f5;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    color:#878787;
+    font-weight: bolder;
+    font-size: 24px;
+
+}
+.prev{
+    background-color:#f5f5f5;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    color:#878787;
+    font-weight: bolder;
+    font-size: 24px;
+}
+.prev:focus{
+    outline: none;
+}
+.next:focus{
+    outline: none;
+}
+.image-container button:hover{
+    color:black;
+}
+
+ .image-container #image {
+    max-width: 100%;
+}
+
+/* card özellikleri*/
+.card-container{
+    background-color:#f5f5f5 ;
+    position: relative;
+    overflow: hidden;
+    padding-bottom:50px;
+    margin-top: 50px;
+    
+}
+.cards-container{
+    color: #212529;
+    border: 1px #e4e4e4 solid;
+    border-radius: 4px;
+    height: 242px;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    
+}
+
+.cards-container label{
+    padding-top: 15px;
+}
+.cards-container h3{
+    padding-top: 15px;
+}
+
+.cards-container p{
+    padding-top: 20px;
+}
+
+.card-container a:hover{
+    text-decoration: none;
+    
+}
+.firma-cards{
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.5s ease;
+    
+    align-items: center;
+    color: #212529;
+}
+
+.firma-card {
+    width: 300px; /* Adjust width as needed */
+    margin-right: 20px; /* Adjust margin as needed */
+   
+}
+.firma-cards :hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.onceki,
+.sonraki {
+    position: absolute;
+    transform: translateY(-50%);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 0px 20px 0px 20px;
+    top: 200px;
+    background-color:#f5f5f5;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    color:#878787;
+    font-weight: bolder;
+}
+
+.onceki {
+    left: 0;
+}
+
+.sonraki {
+    right: 0;
+}
+.onceki:focus{
+    outline: none;
+}
+.sonraki:focus{
+    outline: none;
+}
+/* kariyer planlama*/
+.info{
+    margin-top: 50px;
+    background-color: #f5f5f5;
+}
+.info h2{
+    padding-top: 40px;
+    margin-left: 52px;
+}
+.kariyer-class{
+    display: flex;
+    margin-left: 52px;
+    align-items: center;
+
+}
+
+/*listleme düznlemeleri*/
+
+.list-container li{
+    list-style: none;
+    display: flex;
+    background-color: #fff;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border: 1px solid #e4e4e4;
+    align-items: center;
+    cursor: pointer;
+    padding: 23px 21px;
+    margin-right: 40px;
+    transition: all .3s ease;
+}
+
+.list-container a{
+    color: #333;
+    font-weight: bold;
+}
+.list-container i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.list-container a:hover{
+    text-decoration: none;
+    color: #8316b5;
+}
+
+.list-container li:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Developer</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    width: 100%;
+    border: 2px #f9f9f9 solid;
+}
+.logo img{
+    margin-left: 35px;
+    width: 150px;
+    
+}
+.link-container{
+
+    display: contents;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-list{
+    list-style: none;
+    color: initial;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.nav-list li{
+    margin-right: 20px;
+    position: relative;
+    display: inline-block;
+
+}
+/*Açılır menü sitilleri başlangıç*/
+.nav-list ul{
+    list-style: none;
+    padding: 0;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 600px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 20px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.nav-list li:hover .dropdown-content {
+    display: grid;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+.nav-list li a:hover{
+    color:#8316b5;
+    text-decoration: none;
+}
+.login-button{
+    background-color: #8316b5;
+    border-color: #8316b5;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: none;
+    border: none;
+    width: 250px;
+    height: 55px;
+    font-size: 17px;
+    font-weight: bold;
+    margin-right: 72px;
+}
+/*breadumb sitil baş*/
+.breadcrumb {
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: .875rem;
+    margin-left: 52px;
+}
+
+.breadcrumb ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumb ul li {
+    display: inline;
+    margin-right: 5px;
+}
+
+.breadcrumb ul li:not(:last-child):after {
+    content: '>';
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.breadcrumb ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.breadcrumb ul li a:hover {
+    color: #070308;
+}
+.out-container{
+    padding: 30px;
+    margin-top: 30px;
+    background-color:#f5f5f5;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+
+/*---------------------------------------*/
+.isim-basvur-container{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom: 20px;
+}
+.isim-container{
+    margin-left: 70px;
+}
+
+.basvur-container{
+    margin-right: 70px;
+}
+
+.in-container p{
+    
+    color: #6d6d6d;
+}
+
+/*---------------------------------------*/
+
+/*başvur ve kaydet buton sitillendirmesi*/
+
+.basvur-button{
+    width: 100px;
+    height: 40px;
+    background-color: #8316b5;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px #f9f9f9 solid;
+    font-weight: bold;
+ 
+}
+.basvur-button:hover{
+    background-color: #7415a0;
+}
+
+.kaydet-button{
+    width: 100px;
+    height: 40px;
+    background-color:#f9f9f9;
+    color:#8316b5;
+    border-radius: 5px;
+    border: 2px #8316b5 solid;
+    font-weight: bold;
+}
+
+.sirket-adi{
+    
+    text-decoration: none;
+    color: #333;
+}
+/*tablo sitillendirmesi*/
+
+table.job-details {
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+}
+
+table.job-details th,
+table.job-details td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table.job-details th {
+    background-color: #f2f2f2;
+}
+
+.is-tanimi{
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+
+
+
+}
+
+.is-tanimi ul{
+    margin-left: 23px;
+}
+.aday-kriteri{
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+border: 1px #d1d1d1 solid;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+padding: 10px;
+}
+    </style>
+</head>
+<body>
+    
+<header class="header-container">
+    <div class="logo"><a href="index.html"><img src="images/kariyer-net-logo.png" alt="kariyer.net logo"></a></div>
+    <div class="link-container">
+        <br><br><br>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="isAra.html">İş Ara</a></li>
+                <li><a href="#">Kariyer Planlaması</a></li>
+                <li><a href="#">Kariyer Rehberi</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Kariyer Blog</a></li>
+                        <li><a href="#">Öz Geçmiş Hazırlama İp Uçları</a></li>
+                        <li><a href="#">İş Arama Süreci</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <button class="login-button">Giriş yap / Üye Ol</button>
+    </div>
+</header>
+<nav class="breadcrumb">
+    <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="isAra.html">İş Ara</a></li>
+        <li><a href="frontend.html">Frontend Developer</a></li>
+    </ul>
+</nav>
+<div class="out-container">
+    <div class="in-container">
+<div class="ilan-container">
+<div class="isim-basvur-container">
+<div class="isim-container">
+    <h4>Frontend Developer</h4>
+    
+</div><a href="#" class="sirket-adi">Yazılım AŞ</a><p>Antalya iş yerinde</p>
+<div class="basvur-container">
+    <a href="#"><button class="basvur-button">Başvur</button></a>
+    <a href="#"><button class="kaydet-button">Kaydet</button></a>
+</div>
+</div>
+<div style="display: flex;">
+<img src="images/graduation.png" style="width: 200px; margin-left: 55px;" alt="">
+<table class="job-details">
+    <tr>
+        <th>Çalışma Şekli</th>
+        <td>Tam Zamanlı</td>
+    </tr>
+    <tr>
+        <th>Pozisyon Seviyesi</th>
+        <td>Eleman</td>
+    </tr>
+    <tr>
+        <th>Departman</th>
+        <td>Bilgi Teknolojileri / IT</td>
+    </tr>
+    <tr>
+        <th>Başvuru Sayısı</th>
+        <td>882 başvuru</td>
+    </tr>
+</table>
+</div>
+</div>
+    </div>
+<div class="is-tanimi"> <br>
+    <h3>Genel Nitelikler ve iş tanımı</h3> <br>
+    <p> Temelleri 1912’de atılan, sektörün en geniş ürün portföyüne sahip olan Yazılım AŞ, 5.500 nitelikli çalışanıyla Türk ilaç sektöründe en yüksek istihdamı yaratmaktadır. Yazılım AŞ, güçlü vizyonuyla 2002 yılından bu yana Türk ilaç sektöründeki liderliğini sürdürmektedir. <br> <br><br>
+        Yazılım AŞ, bugün, Türkiye dışında 17 ülkede faaliyet gösteriyor, Kanada'dan Avrupa Birliği ülkelerine, Kuzey Afrika'dan Asya'ya kadar 70'ten fazla ülkeye ihracat yapıyor. Kurumsal vatandaş kimliği, sektörel misyonu ve toplumsal öncelikleriyle daha iyi bir dünya ve daha iyi bir gelecek için çalışan Abdi İbrahim, tüm iş süreçlerinde “sürdürülebilirlik” odaklı bir yaklaşım sergilemektedir. <br><br><br>
+        Yazılım AŞ İlaç Genel Müdürlüğümüz bünyesinde görevlendirilmek üzere Front-End Developer arıyoruz. <br><br><br>
+        Yazılım AŞ; 2025 vizyonu doğrultusunda uluslararası pazarlardaki etkinliğini her geçen gün artırmakta, ulusal güçlü liderliğinin yanı sıra dünyanın en büyük 100 ilaç şirketi arasında yer alma hedefiyle faaliyetlerini aralıksız olarak sürdürmektedir. <br><br><br><br>
+        
+        Pozisyona başvuran adayda olması beklenen özellikler: <br><br>
+        <ul>
+            <li>
+                Javascript ve jQuery Frameworklerine hakim,
+            </li>
+            <li>
+                State management bilgi ve deneyimine sahip (Redux, Context API, etc.),
+            </li>
+            <li>
+                Çok iyi derecede HTML5, CSS/CSS3 bilen, 
+            </li>
+
+            <li>
+                Minimum 3 yıl React veya benzer javascript frameworklerini kullanmış (vue, knockout), 
+            </li>
+
+            <li>
+                Typscript, Less/ Sass, Responsive tasarımlar (bootstrap) konusunda uzman, 
+            </li>
+
+            <li>
+                Cross-browser uyumluluğu ve Responsive Tasarım konusunda deneyimli, 
+            </li>
+
+            <li>
+                Tercihen görsel algısı yüksek, 
+            </li>
+
+            <li>
+                ES6+, JSX, Scss, Sass/Less tecrübesine sahip,
+            </li>
+
+            <li>
+                İletişim koordinasyon gücü yüksek,
+            </li>
+
+            <li>
+                Analitik düşünen, problem çözme becerisine sahip ve sonuç odaklı,
+            </li>
+
+            <li>
+                Takım çalışmasına yatkın.
+            </li>
+        </ul>
+    
+    </p>
+</div>
+<br><br>
+<div class="aday-kriteri">
+    <p style="font-weight: bold;">Aday Kriterleri</p>
+    <p> <b>Tecrübe:</b> En az <b>3</b> yıl tecrübeli</p>
+<p> <b>Eğitim Seviyesi:</b> Ön Lisans(Mezun), Üniversite(Mezun), Yüksek Lisans(Mezun), Doktora(Mezun)</p>
+<p> <b>Askerlik Durumu:</b> Yapıldı, Tecilli, Muaf</p>
+</div>
+</div>
+<footer style="margin-top: 40px; background-color: #ffffff; color:blueviolet; margin-left: 70px; margin-bottom: 20px" >
+    <div class="footer-bottom" style="margin-top: 40px;">
+    <div class="container">
+        <p>&copy; 2024 Kariyer.Net Klonu</p>
+    </div>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kariyer.net</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Boostrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!--header kısmına logo eklemesi ve diğer sayfalara  yönlendirilecek linkleri ekledim butonu link içerisine alarak yönlendirme yapacağım-->
+    <header class="header-container">
+        <div class="logo"><a href="index.html"><img src="images/kariyer-net-logo.png" alt="kariyer.net logo" ></a></div>
+        <div class="link-container">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="isAra.html">İş Ara</a></li>
+                    <li><a href="#">Kariyer Planlaması</a></li>
+                    <li><a href="#">Kariyer Rehberi</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Kariyer Blog</a></li>
+                            <li><a href="#">Öz Geçmiş Hazırlama İp Uçları</a></li>
+                            <li><a href="#">İş Arama Süreci</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <button class="login-button">Giriş yap / Üye Ol</button>
+        </div>
+    </header>
+    <section class="search-feature">
+        <div class="search-container">
+            <h2>
+                Kariyer Fırsatlarını Keşfet
+            </h2>
+            <p>
+                <b> 89.310</b> iş ilanı <b> on binlerce </b> şirket
+            </p>
+            <form>
+                <input class="form-input" type="text" id="inputField" placeholder="Yazılım Uzmanı">
+                <input class="form-input" type="text" placeholder="Şehir veya İlçe ara">
+                <a href="#"><button class="search-button"><img src="images/search-icon.png">İŞ BUL</button></a>
+            </form>
+
+        </div>
+        <div class="populer-search-container">
+            <p class="populer-search">
+                Popüler Aramalar
+            </p>
+            <div class="populer-container">
+                <ul class="search-list">
+                    <li><a href="frontend.html">Frontend Developer</a></li>
+                    <li><a href="#">Dijital Pazarlama Uzmanı</a></li>
+                    <li><a href="#">Yazılım Geliştirme Uzmanı</a></li>
+                    <li><a href="#">Proje Yöneticisi</a></li>
+                    <li><a href="#">İK Uzmanı</a></li>
+            
+                
+                </ul>
+
+            </div>
+        </div>
+
+
+
+        <!--Kayan görseller ekledim breadcumb-->
+    </section>
+    <!--Card ekledim-->
+    <div class="image-container">
+        <button class="prev" onclick="changeImage(-1)">&lt;</button>
+       <a href="isAra.html" target="_blank"> <img id="image" src="image1.jpg" alt="Resim 1"></a>
+        <button class="next" onclick="changeImage(1)">&gt;</button>
+    </div>
+
+
+
+
+    <div class="card-container">
+        <h2 style="margin-left: 75px; margin-top: 30px; font-size: 20px; color:  #212529; font-weight: 300; margin-bottom: 30px;">ÖNE ÇIKAN İLANLAR</h2>
+        <div class="firma-cards">
+            <div class="cards">
+
+                <div class="firma-card"> 
+                    <a href="ilan.html"  target="_blank"> 
+                    <div class="cards-container">
+                      <label>Logo</label>
+                        <h3>İlan İsmi</h3>
+                        <p>Marka Adı</p>
+                        <p>İl</p>
+                    
+                    </div>
+                </a>
+                </div>
+
+                <div class="firma-card"> 
+                    <a href="ilan.html"  target="_blank" > 
+                    <div class="cards-container">
+                      <label>Logo</label>
+                        <h3>İlan İsmi</h3>
+                        <p>Marka Adı</p>
+                        <p>İl</p>
+                    
+                    </div>
+                </a>
+                </div>
+                <div class="firma-card"> 
+                    <a href="ilan.html"  target="_blank"> 
+                    <div class="cards-container">
+                      <label>Logo</label>
+                        <h3>İlan İsmi</h3>
+                        <p>Marka Adı</p>
+                        <p>İl</p>
+                    
+                    </div>
+                </a>
+                </div><div class="firma-card"> 
+                    <a href="ilan.html"  target="_blank"> 
+                    <div class="cards-container">
+                      <label>Logo</label>
+                        <h3>İlan İsmi</h3>
+                        <p>Marka Adı</p>
+                        <p>İl</p>
+                    
+                    </div>
+                </a>
+                </div><div class="firma-card"> 
+                    <a href="#"  target="_blank"> 
+                    <div class="cards-container">
+                      <label>Logo</label>
+                        <h3>İlan İsmi</h3>
+                        <p>Marka Adı</p>
+                        <p>İl</p>
+                    
+                    </div>
+                </a>
+                </div><div class="firma-card"> 
+                    <a href="ilan.html" target="_blank"> 
+                    <div class="cards-container">
+                      <label>Logo</label>
+                        <h3>İlan İsmi</h3>
+                        <p>Marka Adı</p>
+                        <p>İl</p>
+                    
+                    </div>
+                </a>
+                </div>
+            </div>
+            <button class="onceki" onclick="scrollCards(-1)">&#10094;</button>
+    <button class="sonraki" onclick="scrollCards(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <!--kariyer planlamayı oluşturdum-->
+
+    <div class="career-plan-container">
+        <div class="plan-container">
+            <div class="wrapper-container">
+                <div class="info">
+                    <h2>KARİYERİNİ PLANLA</h2>
+                    <div class="kariyer-class">
+                        <div>
+                            <P>Kariyerini planlamaya hazır mısın? Üniversite tercihinden itibaren kariyer yolculuğunun
+                                her adımını titizlikle<br> planlayabileceğin içerikleri senin için bir araya getirdik. Merak
+                                ettiğin tüm sorulara yanıt bulacak, iş fırsatlarını <br> keşfedeceksin!</P>
+
+                            <div class="list-container">
+                                <ul>
+                                    <li class="list"><a href="bolumler.html" target="_blank"><i class="fa-regular fa-newspaper"></i>Hangi Bölümde
+                                            Seni Ne Bekliyor?</a></li>
+                                    <li class="list"> <a href="#" target="_blank"><i class="fa-solid fa-chart-line"></i>Pozisyonların İş
+                                            Tanımları Neler?</a></li>
+                                    <li class="list"><a href="#" target="_blank"><i class="fa-solid fa-graduation-cap"></i>Meslek
+                                            Grupları Ne Kadar Maaş Alıyor?</a></li>
+                                    <li class="list"><a href="#" target="_blank"><i class="fa-solid fa-magnifying-glass"></i>Sana Özel
+                                            CV Şablonları Burada</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="resim-container">
+                            <img src="https://aday-spage.mncdn.com/Knet_img_k-career-plan.1c71d1a.webp?v=69448"
+                                alt="resim">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="margin-top: 40px; background-color: #ffffff; color:blueviolet;" >
+        <div class="footer-bottom" style="margin-top: 40px;">
+        <div class="container">
+            <p>&copy; 2024 Kariyer.Net Klonu</p>
+        </div>
+    </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -8,7 +8,7 @@ function changeImage(step) {
     } else if (currentIndex > maxIndex) {
         currentIndex = 1;
     }
-    document.getElementById('image').src = 'image' + currentIndex + '.jpg';
+    document.getElementById('image').src = 'images/image' + currentIndex + '.jpg';
 }
 function scrollCards(direction) {
     const container = document.querySelector('.cards');
